@@ -1,0 +1,25 @@
+{
+  "name": "nodejs-redis-example",
+  "version": "1.0.0",
+  "description": "A simple Node.js Redis example.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index",
+    "test": "node test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luiztools/nodejs-redis-example.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/luiztools/nodejs-redis-example/issues"
+  },
+  "homepage": "https://github.com/luiztools/nodejs-redis-example#readme",
+  "dependencies": {
+    "mysql2": "^2.2.5",
+    "promise-redis": "0.0.5"
+  }
+}
