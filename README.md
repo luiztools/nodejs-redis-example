@@ -1,7 +1,9 @@
 # nodejs-redis-example
-A simple Node.js Redis example.
+Two simple Node.js Redis examples.
 
-Tutorial completo em: https://www.luiztools.com.br/post/como-criar-um-cache-de-dados-com-redis-em-node-js/
+Tutorial completo de cache em: https://www.luiztools.com.br/post/como-criar-um-cache-de-dados-com-redis-em-node-js/
+
+Tutorial completo de PubSub em: https://www.luiztools.com.br/post/processamento-assincrono-de-tarefas-com-filas-no-redis-e-node-js/
 
 Conheça meus livros: https://www.luiztools.com.br/meus-livros
 
@@ -9,7 +11,7 @@ Conheça meus cursos: https://www.luiztools.com.br/meus-cursos
 
 Me siga nas redes sociais: https://about.me/luiztools
 
-## To Run index.js
+## Para executar o exemplo de cache
 
 1. Rode um npm install na raiz do projeto
 
@@ -17,7 +19,7 @@ Me siga nas redes sociais: https://about.me/luiztools
 
 3. Rode a aplicação com npm start
 
-## To Run test.js
+## Para executar os testes de cache
 
 1. Rode um npm install na raiz do projeto
 
@@ -32,3 +34,15 @@ Me siga nas redes sociais: https://about.me/luiztools
 6. Se já tem a tabela com os dados de teste, descomente o trecho da consulta do MySQL para testar somente ela com npm test
 
 7. Querendo testar com Redis, deixe comentado o trecho que vai direto no MySQL e rode com npm test
+
+## Para executar o exemplo de PubSub
+
+1. Rode um npm install na raiz do projeto
+
+2. Suba um servidor de Redis na sua máquina, conforme explicado no tutorial
+
+3. Rode a webapi com node publisher.js
+
+4. Rode um ou mais subscribers com node subscriber1.js
+
+5. Faça POST http://localhost:3000/channel1 com JSON no body para ver em ação
