@@ -1,6 +1,7 @@
 //queue.js
-const redis = require('promise-redis')();
+const redis = require('redis');
 const client = redis.createClient();
+client.connect();
 
 client.on("error", (error) => {
     console.error(error);

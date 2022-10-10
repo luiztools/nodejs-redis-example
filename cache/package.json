@@ -20,6 +20,6 @@
   "homepage": "https://github.com/luiztools/nodejs-redis-example#readme",
   "dependencies": {
     "mysql2": "^2.2.5",
-    "promise-redis": "0.0.5"
+    "redis": "^4.3.1"
   }
 }

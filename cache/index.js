@@ -1,8 +1,9 @@
 //index.js
 (async () => {
 
-    const redis = require('promise-redis')();
-    const client = redis.createClient('redis://default:8Vj1BIRQUplub95nIOnIa0GfddqakSkI@redis-14874.c276.us-east-1-2.ec2.cloud.redislabs.com:14874/');
+    const redis = require('redis');
+    const client = redis.createClient('redis://localhost:6379/');
+    client.connect();
 
     client.on("error", (error) => {
         console.error(error);
