@@ -8,7 +8,9 @@
     "redis": "^4.3.1"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "publisher": "node publisher",
+    "sub1": "node subscriber1",
+    "sub2": "node subscriber2"
   },
   "keywords": [],
   "author": "",

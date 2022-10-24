@@ -1,4 +1,4 @@
-//subscriber1.js
+//subscriber2.js
 console.log("Worker started");
 const queue = require("./queue");
 queue.subscribe("channel2", message => {
