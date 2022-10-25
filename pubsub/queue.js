@@ -12,13 +12,11 @@ async function publish(channel, value) {
     return client.publish(channel, JSON.stringify(value));
 }
 
-async function subscribe(channel, callback) {
-    client.on("message", (channel, message) => {
+async function subscribe(channelSubscribed, callback) {
+    client.subscribe(channelSubscribed, (channel, message) => {
         console.log('Message arrived!');
         callback(message);
     });
-
-    client.subscribe(channel);
 }
 
 module.exports = {
